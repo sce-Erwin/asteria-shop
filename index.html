@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ASTERIA — Schuhe &amp; Taschen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,300;0,6..96,400;1,6..96,300&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="asteria.css">
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <a class="logo" href="#top">
+      <svg viewBox="0 0 24 24" fill="none"><circle cx="5" cy="18" r="1.6" fill="#c9a876"/><circle cx="12" cy="6" r="1.6" fill="#c9a876"/><circle cx="19" cy="16" r="1.6" fill="#c9a876"/><path d="M5 18L12 6L19 16" stroke="#c9a876" stroke-width="1"/></svg>
+      ASTERIA
+    </a>
+    <nav class="primary">
+      <a href="#shop">Neu</a>
+      <a href="#shop">Schuhe</a>
+      <a href="#shop">Taschen</a>
+      <a href="#story">Über uns</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" aria-label="Suche">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+      <a class="icon-btn" href="#konto" aria-label="Konto">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="3.5"/><path d="M4.5 20c1.6-3.6 4.6-5.5 7.5-5.5s5.9 1.9 7.5 5.5"/></svg>
+      </a>
+      <button class="icon-btn" aria-label="Warenkorb, 0 Artikel">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" style="padding:0;">
+    <div class="hero-bg">
+      <img class="hero-bg-img" src="img/starfieldimg.jpg" alt="Sternenhimmel">
+      <!-- Dimm-Layer: dunkelt das eingesetzte Foto gleichmäßig ab, damit das Sternfeld darüber sichtbar bleibt -->
+      <div class="hero-dim"></div>
+      <div class="stars" id="starfield"></div>
+    </div>
+    <div class="hero-content">
+      <span class="eyebrow">Kollektion 02 — Fernes Licht</span>
+      <h1>Schritte, die ihre<br>eigene Umlaufbahn ziehen.</h1>
+      <p class="lede">Schuhe und Taschen aus einer kleinen Werkstatt, entworfen für Menschen, die ihren eigenen Kurs halten.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#shop">Kollektion entdecken</a>
+        <a class="btn btn-ghost" href="#story">Zur Werkstatt</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOP -->
+  <section id="shop">
+    <div class="wrap">
+      <div class="constellation" style="margin-bottom:56px;">
+        <svg width="40" height="14" viewBox="0 0 40 14"><circle cx="2" cy="7" r="2" fill="#c9a876"/><line x1="4" y1="7" x2="36" y2="7" stroke="#2a2a3d"/><circle cx="38" cy="7" r="2" fill="#c9a876"/></svg>
+        <span>Ausgewählte Stücke</span>
+        <div class="cline"></div>
+      </div>
+
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Shop</span>
+          <h2>Aktuelle Objekte</h2>
+        </div>
+        <div class="filters" role="group" aria-label="Nach Kategorie filtern">
+          <button class="filter-btn active" data-filter="all">Alle</button>
+          <button class="filter-btn" data-filter="schuhe">Schuhe</button>
+          <button class="filter-btn" data-filter="taschen">Taschen</button>
+        </div>
+      </div>
+
+      <div class="grid" id="productGrid">
+
+        <div class="card" data-cat="schuhe">
+          <img class="ph-img" src="img/product1.jpg" alt="Sneaker Nova">
+          <div class="card-info">
+            <div><h3>Nova</h3><span class="card-cat">Sneaker · Veloursleder</span></div>
+            <span class="card-price">259 €</span>
+          </div>
+        </div>
+
+        <div class="card" data-cat="taschen">
+          <img class="ph-img" src="img/product2.jpg" alt="Tasche">
+          <div class="card-info">
+            <div><h3>Corona</h3><span class="card-cat">Schultertasche · Kalbsleder</span></div>
+            <span class="card-price">395 €</span>
+          </div>
+        </div>
+
+        <div class="card" data-cat="schuhe">
+          <img class="ph-img" src="img/product3.jpg" alt="Stiefelette">
+          <div class="card-info">
+            <div><h3>Lyra</h3><span class="card-cat">Stiefelette · Nubukleder</span></div>
+            <span class="card-price">289 €</span>
+          </div>
+        </div>
+
+        <div class="card" data-cat="taschen">
+          <img class="ph-img" src="img/product4.jpg" alt="Tasche">
+          <div class="card-info">
+            <div><h3>Vega</h3><span class="card-cat">Umhängetasche · Nappaleder</span></div>
+            <span class="card-price">245 €</span>
+          </div>
+        </div>
+
+        <div class="card" data-cat="schuhe">
+          <img class="ph-img" src="img/product5.jpg" alt="Loafer">
+          <div class="card-info">
+            <div><h3>Orion</h3><span class="card-cat">Loafer · Glattleder</span></div>
+            <span class="card-price">229 €</span>
+          </div>
+        </div>
+
+        <div class="card" data-cat="taschen">
+          <img class="ph-img" src="img/product6.jpg" alt="Clutch">
+          <div class="card-info">
+            <div><h3>Halo</h3><span class="card-cat">Clutch · Satin &amp; Leder</span></div>
+            <span class="card-price">175 €</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SPOTLIGHT -->
+  <section>
+    <div class="wrap spotlight">
+      <div class="spotlight-img">
+        <img class="ph-img" src="img/comet.jpg" alt="Tasche Comet">
+      </div>
+      <div class="spotlight-text">
+        <span class="eyebrow">Neu diese Saison</span>
+        <h2>Comet</h2>
+        <p>Eine Tasche für den täglichen Weg. Der Riemen lässt sich auf drei Längen einstellen, das Innenfutter aus Canvas nimmt auch volle Tage mit.</p>
+        <ul class="spec-list">
+          <li><span>Material</span><span>Vollnarbiges Rindleder</span></li>
+          <li><span>Maße</span><span>29 × 21 × 9 cm</span></li>
+          <li><span>Herkunft</span><span>Handgefertigt in Portugal</span></li>
+          <li><span>Verfügbarkeit</span><span>Ab Lager, 2–4 Werktage</span></li>
+        </ul>
+        <a class="btn btn-primary" href="#">In den Warenkorb — 335 €</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="story" id="story">
+    <div class="wrap story-inner">
+      <img class="ph-img" src="img/leatherwork.jpg" alt="Werkstattarbeit">
+      <div class="story-text">
+        <span class="eyebrow">Über Asteria</span>
+        <h2 style="margin: 14px 0 22px; font-size: clamp(26px,3vw,36px);">Präzision statt Eile.</h2>
+        <p>Jedes Paar entsteht in einer kleinen Werkstatt in Portugal, in der Leder von Hand zugeschnitten wird, Naht für Naht, bis das Muster stimmt wie eine berechnete Bahn.</p>
+        <p>Wir arbeiten in kleinen Auflagen. Was ausverkauft ist, kommt selten zurück, dafür bleibt jedes Stück, was es sein soll: gut gemacht und ohne Kompromiss beim Material.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACCOUNT / LOGIN -->
+  <section id="konto">
+    <div class="wrap account">
+      <div class="account-copy">
+        <span class="eyebrow">Ihr Konto</span>
+        <h2>Bestellungen im Blick, ohne Umwege.</h2>
+        <p>Mit einem Konto sehen Sie den Status Ihrer Bestellungen, speichern Adressen für den nächsten Einkauf und merken sich Stücke für später.</p>
+        <div class="security-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V8a4 4 0 018 0v3"/></svg>
+          <span>Anmeldung und Registrierung laufen über eine gesicherte, verschlüsselte Verbindung. Passwörter werden bei uns niemals im Klartext gespeichert.</span>
+        </div>
+      </div>
+
+      <div class="auth-card">
+        <div class="auth-tabs" role="tablist">
+          <button class="auth-tab active" data-tab="login" role="tab" aria-selected="true">Anmelden</button>
+          <button class="auth-tab" data-tab="register" role="tab" aria-selected="false">Registrieren</button>
+        </div>
+
+        <form class="auth-form active" data-form="login" onsubmit="return false;">
+          <div class="field">
+            <label for="login-email">E-Mail-Adresse</label>
+            <input id="login-email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="login-pw">Passwort</label>
+            <input id="login-pw" type="password" autocomplete="current-password" required>
+          </div>
+          <div class="field-row">
+            <label><input type="checkbox" style="accent-color:#c9a876;"> Angemeldet bleiben</label>
+            <a href="#">Passwort vergessen?</a>
+          </div>
+          <button class="btn btn-primary" type="submit">Anmelden</button>
+          <span class="auth-hint">Prototyp — es findet keine echte Anmeldung statt.</span>
+        </form>
+
+        <form class="auth-form" data-form="register" onsubmit="return false;">
+          <div class="field">
+            <label for="reg-name">Name</label>
+            <input id="reg-name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="reg-email">E-Mail-Adresse</label>
+            <input id="reg-email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="reg-pw">Passwort</label>
+            <input id="reg-pw" type="password" autocomplete="new-password" required minlength="8">
+          </div>
+          <div class="field-row" style="justify-content:flex-start; gap:8px;">
+            <label><input type="checkbox" style="accent-color:#c9a876;" required> Ich akzeptiere die Datenschutzerklärung</label>
+          </div>
+          <button class="btn btn-primary" type="submit">Konto erstellen</button>
+          <span class="auth-hint">Prototyp — es findet keine echte Registrierung statt.</span>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="orbit tight">
+    <div class="wrap">
+      <span class="eyebrow">Orbit-Newsletter</span>
+      <h2>Neue Stücke, bevor sie online gehen.</h2>
+      <p>Einmal im Monat: neue Modelle, kleine Auflagen, keine Umwege.</p>
+      <form class="orbit-form" onsubmit="return false;">
+        <input type="email" placeholder="ihre@email.de" aria-label="E-Mail-Adresse" required>
+        <button type="submit">Eintragen</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="#top">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="5" cy="18" r="1.6" fill="#c9a876"/><circle cx="12" cy="6" r="1.6" fill="#c9a876"/><circle cx="19" cy="16" r="1.6" fill="#c9a876"/><path d="M5 18L12 6L19 16" stroke="#c9a876" stroke-width="1"/></svg>
+          ASTERIA
+        </a>
+        <p>Schuhe und Accessoires aus einer kleinen Werkstatt. Handgefertigt, in kleinen Auflagen.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <a href="#shop">Schuhe</a>
+        <a href="#shop">Taschen</a>
+        <a href="#shop">Neuheiten</a>
+      </div>
+      <div class="footer-col">
+        <h4>Service</h4>
+        <a href="#">Versand &amp; Rückgabe</a>
+        <a href="#">Größentabelle</a>
+        <a href="#">Kontakt</a>
+      </div>
+      <div class="footer-col">
+        <h4>Unternehmen</h4>
+        <a href="#story">Über Asteria</a>
+        <a href="#">Werkstatt</a>
+        <a href="#">Presse</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Asteria. Alle Rechte vorbehalten.</span>
+      <span>Impressum · Datenschutz · AGB</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Sternfeld für den Hero-Hintergrund
+  (function(){
+    var field = document.getElementById('starfield');
+    var count = window.innerWidth < 600 ? 35 : 70;
+    for (var i = 0; i < count; i++){
+      var s = document.createElement('i');
+      s.style.left = (Math.random()*100) + '%';
+      s.style.top = (Math.random()*100) + '%';
+      s.style.animationDelay = (Math.random()*4.5) + 's';
+      // etwa jeder fünfte Punkt wird größer, für Tiefe und bessere Sichtbarkeit
+      if (Math.random() < 0.2){ s.classList.add('big'); }
+      field.appendChild(s);
+    }
+  })();
+
+  // Shop-Filter
+  document.querySelectorAll('.filter-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      document.querySelectorAll('.filter-btn').forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      var f = btn.dataset.filter;
+      document.querySelectorAll('#productGrid .card').forEach(function(card){
+        var show = (f === 'all' || card.dataset.cat === f);
+        card.classList.toggle('hidden', !show);
+      });
+    });
+  });
+
+  // Login / Registrieren Tabs
+  document.querySelectorAll('.auth-tab').forEach(function(tab){
+    tab.addEventListener('click', function(){
+      document.querySelectorAll('.auth-tab').forEach(function(t){ t.classList.remove('active'); t.setAttribute('aria-selected','false'); });
+      document.querySelectorAll('.auth-form').forEach(function(f){ f.classList.remove('active'); });
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected','true');
+      document.querySelector('.auth-form[data-form="' + tab.dataset.tab + '"]').classList.add('active');
+    });
+  });
+</script>
+
+</body>
+</html>
